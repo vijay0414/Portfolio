@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijay Kumar | Web Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Vijay Kumar, a Web Developer focused on clean, responsive websites and n8n automation.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><i class="fas fa-mjolnir"></i> Vijay<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero" id="homeBtn">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills" id="skillsBtn">Skills & Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Night/Light Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <!-- Ben 10 Omnitrix Transition -->
+            <div class="omnitrix-overlay">
+                <div class="omnitrix-container">
+                    <div class="omnitrix-symbol">
+                        <div class="hourglass"></div>
+                    </div>
+                    <div class="omnitrix-rings">
+                        <div class="ring"></div>
+                        <div class="ring"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <img src="images/1760114829766.jpg" alt="Vijay Kumar" class="profile-img animate__animated animate__fadeIn">
+                <div class="bio animate__animated animate__fadeIn" id="bioText">
+                    <p class="greeting">Designing the future of <span>Web & Automation</span></p>
+                    <h1>Vijay Kumar</h1>
+                    <p class="description">
+                        Full-stack developer specializing in scalable web solutions and intelligent workflow automation. 
+                        Bridging the gap between clean design and complex logic to drive digital efficiency.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn">View Projects</a>
+                        <a href="#contact" class="btn secondary">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-container">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vijaykumarasamy/" target="_blank" class="linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/vijay0414" target="_blank" class="github" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="about-flex-container">
+                <div class="about-text animate__animated">
+                    <h2>Professional Background</h2>
+                    <p>
+                        I am an IT student and aspiring software engineer with a focus on modern web ecosystems. 
+                        My expertise lies in the <strong>MERN stack</strong> and <strong>Java development</strong>, 
+                        complemented by a deep interest in <strong>AI-driven automation</strong>. 
+                    </p>
+                    <p>
+                        I believe in building applications that are not just functional, but also scalable and user-centric. 
+                        By leveraging tools like <strong>n8n</strong>, I streamline complex processes, allowing businesses to focus on growth. 
+                        Currently pursuing my B.Tech, I am constantly exploring new technologies to stay at the forefront of the industry.
+                    </p>
+                    <div class="btn1">
+                        <a href="#resume" class="btn">View Resume</a>
+                    </div>
+                </div>
+                <div class="about-visual animate__animated">
+                    <img src="images/1760114829766.jpg" alt="Vijay Kumar" class="img">
+                    <div class="experience-badge">
+                        <span class="num">B.Tech</span>
+                        <span class="label">IT Undergrad</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Projects Section -->
+        <section id="skills">
+            <div class="container skills-container animate__animated" id="skills-section">
+                <h2 class="h2">Expertise & Applied Projects</h2>
+                <div class="skills-flex-wrapper">
+                    <!-- Left: Core Skills -->
+                    <div class="skills-left">
+                        <div class="skill-group-title"><h3>Software Development</h3></div>
+                        <div class="skill">
+                            <div class="skill-card"><i class="fas fa-mug-hot java"></i> Java Development</div>
+                            <p>Robust backend systems and desktop applications using Java and Spring Framework.</p>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-card"><i class="fab fa-react react"></i> MERN Stack</div>
+                            <p>Full-stack web applications with MongoDB, Express.js, React, and Node.js.</p>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-card"><i class="fab fa-js js"></i> Modern JavaScript</div>
+                            <p>Efficient ES6+ code for responsive frontend logic and interactive UX.</p>
+                        </div>
+                    </div>
+
+                    <!-- Middle: Automation -->
+                    <div class="skills-right">
+                        <div class="skill-group-title"><h3>Automation & Tools</h3></div>
+                        <div class="skill">
+                            <div class="skill-card"><i class="fas fa-cogs"></i> n8n Workflow Automation</div>
+                            <p>Complex automated workflows to connect APIs and optimize processes.</p>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-card"><i class="fab fa-html5 html"></i> Frontend Engineering</div>
+                            <p>Semantic HTML5 and advanced CSS3 for pixel-perfect designs.</p>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-card"><i class="fas fa-lightbulb problem"></i> Analytical Problem Solving</div>
+                            <p>Algorithmic thinking to solve complex technical challenges.</p>
+                        </div>
+                    </div>
+
+                    <!-- Right: Key Projects -->
+                    <div class="skills-projects">
+                        <div class="skill-group-title"><h3>Featured Projects</h3></div>
+                        <div class="skill-project-item">
+                            <div class="skill-card"><i class="fas fa-bus"></i> Bus Tracking System</div>
+                            <p>Real-time location & seat monitoring using interactive maps.</p>
+                            <a href="https://github.com/vijay0414/Bus_Ticket_and_Tracking.git" target="_blank" class="mini-link">GitHub <i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="skill-project-item">
+                            <div class="skill-card"><i class="fas fa-calendar-alt"></i> Campus Event Tracker</div>
+                            <p>Event management and participation tracking for colleges.</p>
+                            <a href="https://github.com/vijay0414/Ondutytracker.git" target="_blank" class="mini-link">GitHub <i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="skill-project-item">
+                            <div class="skill-card"><i class="fas fa-seedling"></i> Agri-Trade Platform</div>
+                            <p>Scalable trading marketplace for farmers and retailers.</p>
+                            <a href="https://github.com/vijay0414/Digital-Agriculture-Trading-Platform.git" target="_blank" class="mini-link">GitHub <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Resume Section (Restoring Position while using better CSS structure) -->
+        <section id="resume">
+            <div class="container resume-inner">
+                <h2 class="glow">My Resume</h2>
+                <div class="resume-pos-wrapper">
+                    <div class="resume-left-group">
+                        <div class="resume-block">
+                            <h3 class="res"><i class="fas fa-graduation-cap"></i> Education</h3>
+                            <ul>
+                                <li><b>Bachelor of Technology in IT</b><br><i>VSB Engineering College, Karur | 2023 - 2027</i></li>
+                                <li><b>HSC (State Board)</b><br><i>Sri Vidhya Nikethan HS School | 2022 - 2023 | Score: 93.8%</i></li>
+                            </ul>
+                        </div>
+                        <div class="resume-block">
+                            <h3 class="res"><i class="fas fa-code"></i> Projects</h3>
+                            <ul>
+                                <li><b>Real-Time Bus Location & Monitoring System</b></li>
+                                <li><b>Campus-Event-Tracker</b></li>
+                                <li><b>Digital Agriculture Trading Platform for Farmers and Retailers</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="resume-right-group">
+                        <div class="resume-block">
+                            <h3 class="res"><i class="fas fa-award"></i> Certifications</h3>
+                            <ul>
+                                <li><b>NPTEL</b><br><i>Programming in Java (Elite Silver) - IIT Madras</i></li>
+                                <li><b>Infosys Springboard</b><br><i>Java & Python Foundation Certification</i></li>
+                            </ul>
+                        </div>
+                        <div class="resume-block">
+                            <h3 class="res"><i class="fas fa-tools"></i> Skills</h3>
+                            <ul>
+                                <li>Java, HTML, CSS, JavaScript, React</li>
+                                <li>n8n Automation</li>
+                                <li>Problem Solving, Communication, Teamwork</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-btn-container">
+                    <a href="resume/Vijaykumar_Resume.pdf" class="btn" download>Download Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2 class="contact-title">Contact Me</h2>
+            <div class="contact-wrapper">
+                <div class="contact-left">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span class="contact-val">vijaykumarasamy@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span class="contact-val">+91 75982 02292</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-location-dot"></i>
+                        <span class="contact-val">Kangayam, Tiruppur</span>
+                    </div>
+                    <div class="social">
+                        <a href="https://wa.me/917598202292" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me/Vijaykumarasamy" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form id="contact-form">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" placeholder="Message" required></textarea>
+                        <p id="contact-message" class="contact-status"></p>
+                        <button type="submit" class="contact-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
