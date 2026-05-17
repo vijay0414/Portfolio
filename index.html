@@ -1,261 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vijay Kumar | Web Developer Portfolio</title>
-    <meta name="description" content="Portfolio of Vijay Kumar, a Web Developer focused on clean, responsive websites and n8n automation.">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- Custom CSS -->
+    <title>VIJAY KUMAR | PORTFOLIO</title>
+    <!-- Troncore Futuristic Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo"><i class="fas fa-mjolnir"></i> Vijay<span>.</span></div>
-            <ul class="nav-links">
-                <li><a href="#hero" id="homeBtn">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills" id="skillsBtn">Skills & Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="nav-actions">
-                <button id="theme-toggle" aria-label="Toggle Night/Light Mode">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+
+    <!-- Subtle Cinematic Film Grain Overlay -->
+    <div class="film-grain"></div>
+
+    <!-- Tron Grid Canvas Background -->
+    <canvas id="tron-grid-canvas"></canvas>
+
+    <!-- Navigation (Sleek Vector Grid Nav) -->
+    <nav class="cinematic-nav fade-in-delay">
+        <a href="#hero" class="nav-brand">VIJAY KUMAR</a>
+        <div class="nav-links">
+            <a href="#act-i">PROFILE</a>
+            <a href="#act-ii">EXPERTISE</a>
+            <a href="#act-iii">PROJECTS</a>
+            <a href="#epilogue">CONTACT</a>
+        </div>
+    </nav>
+
+    <!-- Hero / Title Sequence (Grid Entry Point) -->
+    <header id="hero" class="scene">
+        <div class="scene-content text-center">
+            <p class="presenting fade-in">FULL-STACK DEVELOPER</p>
+            <h1 class="main-title cinematic-reveal">VIJAY KUMAR</h1>
+            <p class="subtitle fade-in-delay">FULL-STACK WEB & AUTOMATION DEVELOPER</p>
+            <div class="scroll-indicator fade-in-delay-long">
+                <span>EXPLORE</span>
+                <div class="line"></div>
             </div>
-            <!-- Ben 10 Omnitrix Transition -->
-            <div class="omnitrix-overlay">
-                <div class="omnitrix-container">
-                    <div class="omnitrix-symbol">
-                        <div class="hourglass"></div>
-                    </div>
-                    <div class="omnitrix-rings">
-                        <div class="ring"></div>
-                        <div class="ring"></div>
-                    </div>
-                </div>
-            </div>
-        </nav>
+        </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero">
-            <div class="hero-content">
-                <img src="images/1760114829766.jpg" alt="Vijay Kumar" class="profile-img animate__animated animate__fadeIn">
-                <div class="bio animate__animated animate__fadeIn" id="bioText">
-                    <p class="greeting">Designing the future of <span>Web & Automation</span></p>
-                    <h1>Vijay Kumar</h1>
-                    <p class="description">
-                        Full-stack developer specializing in scalable web solutions and intelligent workflow automation. 
-                        Bridging the gap between clean design and complex logic to drive digital efficiency.
-                    </p>
-                    <div class="hero-btns">
-                        <a href="#skills" class="btn">View Projects</a>
-                        <a href="#contact" class="btn secondary">Get in Touch</a>
+    <!-- Act I: About (Professional Identity) -->
+    <section id="act-i" class="scene">
+        <div class="scene-content">
+            <div class="chapter-marker reveal-element">
+                <span class="chapter-num">ACT_01</span>
+                <h2 class="chapter-title">PROFESSIONAL PROFILE</h2>
+            </div>
+
+            <div class="story-grid">
+                <div class="story-text reveal-element">
+                    <p>Hey — I’m Vijay Kumar, a full-stack developer and automation architect from Kangayam, Tiruppur, Tamil Nadu, India. I enjoy building modern web applications, scalable database systems, and end-to-end automation workflows that combine visual aesthetics with robust architecture.</p>
+                    <p class="highlight">I worked on MERN stack, n8n automation pipeline engineering, and low-latency data structures. Outside of development, I spend my time playing chess and cricket.</p>
+                </div>
+                <div class="story-image reveal-element">
+                    <div class="portrait-frame">
+                        <img src="images/1760114829766.jpg" alt="Vijay Kumar" class="cinematic-portrait">
                     </div>
                 </div>
             </div>
-            <div class="profile-container">
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/vijaykumarasamy/" target="_blank" class="linkedin" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/vijay0414" target="_blank" class="github" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
+        </div>
+    </section>
+
+    <!-- Act II: Skills (Technical Expertise) -->
+    <section id="act-ii" class="scene">
+        <div class="scene-content">
+            <div class="chapter-marker reveal-element">
+                <span class="chapter-num">ACT_02</span>
+                <h2 class="chapter-title">TECHNICAL EXPERTISE</h2>
+            </div>
+
+            <div class="arsenal-grid">
+                <div class="arsenal-card reveal-element">
+                    <h3>FRONTEND WEB DEVELOPMENT</h3>
+                    <div class="divider"></div>
+                    <ul class="skill-list">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React.js</li>
+                        <li>TypeScript</li>
+                    </ul>
+                </div>
+
+                <div class="arsenal-card reveal-element" style="transition-delay: 0.2s;">
+                    <h3>BACKEND SERVICES</h3>
+                    <div class="divider"></div>
+                    <ul class="skill-list">
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>Java</li>
+                        <li>Spring Boot</li>
+                    </ul>
+                </div>
+
+                <div class="arsenal-card reveal-element" style="transition-delay: 0.4s;">
+                    <h3>DATABASES, AUTOMATION & TOOLING</h3>
+                    <div class="divider"></div>
+                    <ul class="skill-list">
+                        <li>MongoDB</li>
+                        <li>MySql</li>
+                        <li>Vector Databases (Endee)</li>
+                        <li>n8n Automation</li>
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>Postman</li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- About Section -->
-        <section id="about">
-            <div class="about-flex-container">
-                <div class="about-text animate__animated">
-                    <h2>Professional Background</h2>
-                    <p>
-                        I am an IT student and aspiring software engineer with a focus on modern web ecosystems. 
-                        My expertise lies in the <strong>MERN stack</strong> and <strong>Java development</strong>, 
-                        complemented by a deep interest in <strong>AI-driven automation</strong>. 
-                    </p>
-                    <p>
-                        I believe in building applications that are not just functional, but also scalable and user-centric. 
-                        By leveraging tools like <strong>n8n</strong>, I streamline complex processes, allowing businesses to focus on growth. 
-                        Currently pursuing my B.Tech, I am constantly exploring new technologies to stay at the forefront of the industry.
-                    </p>
-                    <div class="btn1">
-                        <a href="#resume" class="btn">View Resume</a>
+    <!-- Act III: Projects (Featured Portfolios) -->
+    <section id="act-iii" class="scene">
+        <div class="scene-content">
+            <div class="chapter-marker reveal-element">
+                <span class="chapter-num">ACT_03</span>
+                <h2 class="chapter-title">FEATURED PROJECTS</h2>
+            </div>
+
+            <div class="chronicles-list">
+                <!-- Project 1 -->
+                <div class="chronicle reveal-element">
+                    <div class="chronicle-header">
+                        <span class="chronicle-year">PROJECT_2025</span>
+                        <h3 class="chronicle-title">Bus Ticket & Tracking <span class="toggle-indicator">[+]</span></h3>
+                    </div>
+                    <div class="chronicle-details">
+                        <p class="chronicle-desc">A real-time geospatial tracking and seat monitoring system. Built to
+                            navigate the complexities of transit data and interactive mapping.</p>
+                        <div class="chronicle-tech">
+                            <span>React</span> <span>•</span> <span>Node.js</span> <span>•</span>
+                            <span>Express.js</span><span>•</span><span>MongoDB</span>
+                        </div>
+                        <a href="https://github.com/vijay0414/Bus_Ticket_and_Tracking" target="_blank"
+                            class="cinematic-link">View Source</a>
                     </div>
                 </div>
-                <div class="about-visual animate__animated">
-                    <img src="images/1760114829766.jpg" alt="Vijay Kumar" class="img">
-                    <div class="experience-badge">
-                        <span class="num">B.Tech</span>
-                        <span class="label">IT Undergrad</span>
+
+                <!-- Project 2 -->
+                <div class="chronicle reveal-element">
+                    <div class="chronicle-header">
+                        <span class="chronicle-year">PROJECT_2026</span>
+                        <h3 class="chronicle-title">Agri-Trade Platform <span class="toggle-indicator">[+]</span></h3>
+                    </div>
+                    <div class="chronicle-details">
+                        <p class="chronicle-desc">A scalable marketplace bridging the gap between farmers and retailers.
+                            Engineered for direct connection and seamless digital transactions.</p>
+                        <div class="chronicle-tech">
+                            <span>React</span> <span>•</span> <span>Java</span> <span>•</span>
+                            <span>Springboot</span><span>•</span><span>MYSQL</span>
+                        </div>
+                        <a href="https://github.com/vijay0414/Digital-Agriculture-Trading-Platform" target="_blank"
+                            class="cinematic-link">View Source</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="chronicle reveal-element">
+                    <div class="chronicle-header">
+                        <span class="chronicle-year">PROJECT_2025</span>
+                        <h3 class="chronicle-title">OnDutyTracker <span class="toggle-indicator">[+]</span></h3>
+                    </div>
+                    <div class="chronicle-details">
+                        <p class="chronicle-desc">The “On Duty Tracker” is a full-stack web application designed to manage and track college events efficiently.</p>
+                        <div class="chronicle-tech">
+                            <span>React</span> <span>•</span> <span>Node.js</span> <span>•</span>
+                            <span>Express.js</span><span>•</span><span>MONGODB</span><span>•</span><span>JWT authentication</span>
+                        </div>
+                        <a href="https://github.com/vijay0414/Ondutytracker" target="_blank"
+                            class="cinematic-link">View Source</a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="chronicle reveal-element">
+                    <div class="chronicle-header">
+                        <span class="chronicle-year">PROJECT_2025</span>
+                        <h3 class="chronicle-title">Sentiment Analysis Workflow (N8N) <span class="toggle-indicator">[+]</span></h3>
+                    </div>
+                    <div class="chronicle-details">
+                        <p class="chronicle-desc">A highly scalable review scraping and automated sentiment analysis platform. It features an advanced N8N workflow trigger connected to Google Maps and Amazon product review parsers using SerpAPI and webhooks to sync reviews into a local Node/Express database.</p>
+                        <div class="chronicle-tech">
+                            <span>N8N Automation</span> <span>•</span> <span>Node.js</span> <span>•</span>
+                            <span>Express.js</span><span>•</span><span>SerpAPI</span><span>•</span><span>Webhooks</span>
+                        </div>
+                        <a href="https://github.com/vijay0414/Sentiment_Analysis_Using_N8N" target="_blank"
+                            class="cinematic-link">View Source</a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="chronicle reveal-element">
+                    <div class="chronicle-header">
+                        <span class="chronicle-year">PROJECT_2026</span>
+                        <h3 class="chronicle-title">GitHub Repo Analyzer <span class="toggle-indicator">[+]</span></h3>
+                    </div>
+                    <div class="chronicle-details">
+                        <p class="chronicle-desc">Collaborative work on Endee.io, an ultra high-performance, single-node vector database built in Python designed to index and query up to 1 billion vectors. Contributed to core vector search benchmarks and advanced low-level memory layout optimizations.</p>
+                        <div class="chronicle-tech">
+                            <span>Python</span> <span>•</span> <span>Vector Search</span> <span>•</span>
+                            <span>Semantic Querying</span><span>•</span><span>Database Core</span>
+                        </div>
+                        <a href="https://github.com/vijay0414/vijay-endee" target="_blank"
+                            class="cinematic-link">View Source</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Skills & Projects Section -->
-        <section id="skills">
-            <div class="container skills-container animate__animated" id="skills-section">
-                <h2 class="h2">Expertise & Applied Projects</h2>
-                <div class="skills-flex-wrapper">
-                    <!-- Left: Core Skills -->
-                    <div class="skills-left">
-                        <div class="skill-group-title"><h3>Software Development</h3></div>
-                        <div class="skill">
-                            <div class="skill-card"><i class="fas fa-mug-hot java"></i> Java Development</div>
-                            <p>Robust backend systems and desktop applications using Java and Spring Framework.</p>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-card"><i class="fab fa-react react"></i> MERN Stack</div>
-                            <p>Full-stack web applications with MongoDB, Express.js, React, and Node.js.</p>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-card"><i class="fab fa-js js"></i> Modern JavaScript</div>
-                            <p>Efficient ES6+ code for responsive frontend logic and interactive UX.</p>
-                        </div>
-                    </div>
+    <!-- Act IV: Contact (Secure Communications Portal) -->
+    <section id="epilogue" class="scene">
+        <div class="scene-content text-center reveal-element">
+            <p class="presenting">SECURE COMMUNICATIONS CHANNEL</p>
+            <h2 class="main-title small-title">GET IN TOUCH</h2>
 
-                    <!-- Middle: Automation -->
-                    <div class="skills-right">
-                        <div class="skill-group-title"><h3>Automation & Tools</h3></div>
-                        <div class="skill">
-                            <div class="skill-card"><i class="fas fa-cogs"></i> n8n Workflow Automation</div>
-                            <p>Complex automated workflows to connect APIs and optimize processes.</p>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-card"><i class="fab fa-html5 html"></i> Frontend Engineering</div>
-                            <p>Semantic HTML5 and advanced CSS3 for pixel-perfect designs.</p>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-card"><i class="fas fa-lightbulb problem"></i> Analytical Problem Solving</div>
-                            <p>Algorithmic thinking to solve complex technical challenges.</p>
-                        </div>
-                    </div>
+            <div class="contact-links">
+                <a href="mailto:vijaykumarasamy@gmail.com" class="epic-email">vijaykumarasamy@gmail.com</a>
+            </div>
 
-                    <!-- Right: Key Projects -->
-                    <div class="skills-projects">
-                        <div class="skill-group-title"><h3>Featured Projects</h3></div>
-                        <div class="skill-project-item">
-                            <div class="skill-card"><i class="fas fa-bus"></i> Bus Tracking System</div>
-                            <p>Real-time location & seat monitoring using interactive maps.</p>
-                            <a href="https://github.com/vijay0414/Bus_Ticket_and_Tracking.git" target="_blank" class="mini-link">GitHub <i class="fab fa-github"></i></a>
-                        </div>
-                        <div class="skill-project-item">
-                            <div class="skill-card"><i class="fas fa-calendar-alt"></i> Campus Event Tracker</div>
-                            <p>Event management and participation tracking for colleges.</p>
-                            <a href="https://github.com/vijay0414/Ondutytracker.git" target="_blank" class="mini-link">GitHub <i class="fab fa-github"></i></a>
-                        </div>
-                        <div class="skill-project-item">
-                            <div class="skill-card"><i class="fas fa-seedling"></i> Agri-Trade Platform</div>
-                            <p>Scalable trading marketplace for farmers and retailers.</p>
-                            <a href="https://github.com/vijay0414/Digital-Agriculture-Trading-Platform.git" target="_blank" class="mini-link">GitHub <i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
+            <div class="social-cast">
+                <span>PORT_COMMUNICATIONS_DIRECTORY</span>
+                <div class="cast-links">
+                    <a href="https://github.com/vijay0414" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/vijaykumarasamy/" target="_blank"><i
+                            class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://wa.me/917598202292" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                 </div>
             </div>
-        </section>
 
-
-        <!-- Resume Section (Restoring Position while using better CSS structure) -->
-        <section id="resume">
-            <div class="container resume-inner">
-                <h2 class="glow">My Resume</h2>
-                <div class="resume-pos-wrapper">
-                    <div class="resume-left-group">
-                        <div class="resume-block">
-                            <h3 class="res"><i class="fas fa-graduation-cap"></i> Education</h3>
-                            <ul>
-                                <li><b>Bachelor of Technology in IT</b><br><i>VSB Engineering College, Karur | 2023 - 2027</i></li>
-                                <li><b>HSC (State Board)</b><br><i>Sri Vidhya Nikethan HS School | 2022 - 2023 | Score: 93.8%</i></li>
-                            </ul>
-                        </div>
-                        <div class="resume-block">
-                            <h3 class="res"><i class="fas fa-code"></i> Projects</h3>
-                            <ul>
-                                <li><b>Real-Time Bus Location & Monitoring System</b></li>
-                                <li><b>Campus-Event-Tracker</b></li>
-                                <li><b>Digital Agriculture Trading Platform for Farmers and Retailers</b></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="resume-right-group">
-                        <div class="resume-block">
-                            <h3 class="res"><i class="fas fa-award"></i> Certifications</h3>
-                            <ul>
-                                <li><b>NPTEL</b><br><i>Programming in Java (Elite Silver) - IIT Madras</i></li>
-                                <li><b>Infosys Springboard</b><br><i>Java & Python Foundation Certification</i></li>
-                            </ul>
-                        </div>
-                        <div class="resume-block">
-                            <h3 class="res"><i class="fas fa-tools"></i> Skills</h3>
-                            <ul>
-                                <li>Java, HTML, CSS, JavaScript, React</li>
-                                <li>n8n Automation</li>
-                                <li>Problem Solving, Communication, Teamwork</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="resume-btn-container">
-                    <a href="./resume/VijayKumar_Resume.pdf" class="btn" download>Download Resume</a>
-                </div>
+            <div class="resume-download">
+                <a href="./resume/VijayKumar_Resume.pdf" download class="cinematic-btn">DOWNLOAD PORTFOLIO RESUME</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <h2 class="contact-title">Contact Me</h2>
-            <div class="contact-wrapper">
-                <div class="contact-left">
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <span class="contact-val">vijaykumarasamy@gmail.com</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <span class="contact-val">+91 75982 02292</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-location-dot"></i>
-                        <span class="contact-val">Kangayam, Tiruppur</span>
-                    </div>
-                    <div class="social">
-                        <a href="https://wa.me/917598202292" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://t.me/Vijaykumarasamy" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
-                    </div>
-                </div>
-                <div class="contact-right">
-                    <form id="contact-form">
-                        <input type="text" name="name" placeholder="Name" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <textarea name="message" placeholder="Message" required></textarea>
-                        <p id="contact-message" class="contact-status"></p>
-                        <button type="submit" class="contact-btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- Credits -->
+    <footer class="credits reveal-element">
+        <p>VIJAY KUMAR // SOFTWARE ENGINEER</p>
+        <p class="small">© 2026</p>
+    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
-
-
 </body>
+
 </html>

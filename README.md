@@ -1,18 +1,17 @@
-#  Vijay Kumar | Modern Developer Portfolio
+#  Vijay Kumar | Portfolio
 
-
-A high-performance, visually stunning personal portfolio website designed with a focus on modern web aesthetics, glassmorphism, and seamless user experience. This project showcases my journey as an IT student and aspiring software engineer, highlighting my expertise in web development and AI-driven automation.
+A high-performance, visually stunning personal portfolio website designed with a dark cyberpunk and active AI console aesthetic. The website features an interactive neural-matrix particle grid canvas, ultra-frosted glassmorphic container cards, custom diagnostics scan lines, and smooth scroll reveal animations.
 
 ---
 
 ##  Key Features
 
-- **Ben 10 Omnitrix Transition**: A unique, custom-built theme toggle animation inspired by the Omnitrix, seamlessly switching between Dark and Light modes.
-- **Glassmorphism UI**: A sleek, premium design utilizing modern CSS techniques, including backdrop filters and translucent cards.
-- **Fully Responsive**: Optimized for all screen sizes, from mobile devices to large desktop monitors.
-- **Dynamic Animations**: Powered by `Animate.css` and native CSS keyframes for a lively, interactive feel.
-- **Integrated Contact Form**: A functional communication channel powered by **EmailJS**, allowing users to reach out directly.
-- **Interactive Skill Grid**: A structured display of technical expertise and featured projects.
+- **Interactive AI Neural Matrix Background**: A custom HTML5 Canvas-based background animation depicting a live, organic neural node network that tracks the cursor and performs diagonal diagnostic sweeps.
+- **Futuristic Cyber Neon Console Aesthetic**: Curated neon accent colors—Cyan (`--neon-cyan`) and Purple (`--neon-purple`)—applied dynamically across the interface to capture a premium digital control center theme.
+- **Alternating Project Chronicles**: Accordion-based featured project cards that expand smoothly to reveal details, automatically alternating between active cyan and purple neon system glow.
+- **Scroll Reveal Architecture**: A lightweight scroll-reveal engine driven by native JavaScript `IntersectionObserver` that animates cards and details on viewport entry.
+- **Direct Mail Connection**: A functional direct link connection to bridge communications via email using custom glass-molded call-to-actions.
+- **Fully Responsive & Top-Stacked Mobile Layout**: Completely optimized mobile layout that repositions and scales grid components dynamically, including placing the central professional portrait directly at the top of the bio section for enhanced mobile scrolling.
 
 ---
 
@@ -24,19 +23,27 @@ A high-performance, visually stunning personal portfolio website designed with a
 
 ---
 
-##  Featured Projects
+##  Featured Project Chronicles
 
 ###  Real-Time Bus Location & Monitoring System
-A comprehensive solution for real-time tracking of public transport, including seat monitoring and interactive maps.
+A comprehensive solution for real-time tracking of public transport, including seat monitoring, geospatial location tracking, and interactive mapping.
 - **GitHub**: [View Repository](https://github.com/vijay0414/Bus_Ticket_and_Tracking.git)
 
-###  Campus Event Tracker
+###  Agri-Trade Platform
+A scalable digital marketplace connecting farmers and retailers directly, engineered to drive efficiency in digital agricultural transactions.
+- **GitHub**: [View Repository](https://github.com/vijay0414/Digital-Agriculture-Trading-Platform.git)
+
+###  Campus Event Tracker (OnDutyTracker)
 A dedicated platform for managing and participating in college events, streamlining on-duty tracking for students.
 - **GitHub**: [View Repository](https://github.com/vijay0414/Ondutytracker.git)
 
-###  Agri-Trade Platform
-A scalable marketplace connecting farmers and retailers, designed to drive efficiency in agricultural trading.
-- **GitHub**: [View Repository](https://github.com/vijay0414/Digital-Agriculture-Trading-Platform.git)
+###  Sentiment Analysis Workflow (N8N)
+A highly automated review scraping and sentiment analysis flow powered by N8N visual automation, Google Maps/Amazon reviews parsing via SerpAPI, webhooks, and a custom Node/Express backend.
+- **GitHub**: [View Repository](https://github.com/vijay0414/Sentiment_Analysis_Using_N8N.git)
+
+###  GitHub Repo Analyzer (Endee.io Vector DB)
+Collaborative work on Endee.io, a low-latency, single-node vector database in Python optimized for 1 billion vector index configurations and microsecond semantic search core benchmarks.
+- **GitHub**: [View Repository](https://github.com/vijay0414/vijay-endee.git)
 
 ---
 
@@ -53,16 +60,19 @@ To run this portfolio locally on your machine:
    cd Portfolio
    ```
 3. **Open `index.html`:**
-   Simply open the `index.html` file in your preferred web browser.
+   Simply open the `index.html` file in your preferred web browser, or serve it using any simple local HTTP server:
+   ```bash
+   python -m http.server 8000
+   ```
 
 ---
 
 ##  About Me
 
-I am a B.Tech IT student at VSB Engineering College, specializing in building scalable web solutions and intelligent workflow automation. I bridge the gap between clean design and complex logic to drive digital efficiency.
+I am a B.Tech IT student at VSB Engineering College, specializing in building scalable full-stack web solutions and intelligent workflow automation pipelines. Based out of Kangayam, Tiruppur, Tamil Nadu, India, I bridge the gap between clean frontend design and low-latency backend logic.
 
 - **LinkedIn**: [Vijay Kumar](https://www.linkedin.com/in/vijaykumarasamy/)
 - **GitHub**: [@vijay0414](https://github.com/vijay0414)
-- **Email**: [vijaykumarasamy@gmail.com](mailto:vijaykumarasamy@gmail.com)
+- **Email**: [vijaykumarasamy0414@gmail.com](mailto:vijaykumarasamy0414@gmail.com)
 
 ---
