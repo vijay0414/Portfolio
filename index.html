@@ -1,275 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIJAY KUMAR | PORTFOLIO</title>
-    <!-- Troncore Futuristic Fonts -->
+    <title>Vijay Kumar — Full-Stack Developer</title>
+    <!-- Favicon: VK monogram -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230e0e0e'/%3E%3Ctext x='16' y='22' font-family='Georgia%2C serif' font-size='14' font-weight='700' fill='%23f0ede8' text-anchor='middle' letter-spacing='0.5'%3EVK%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&display=swap"
-        rel="stylesheet">
+    <!-- 
+        Display: DM Serif Display — editorial, confident, not stuffy
+        Body/UI: Inter — clean, neutral, professional
+        Mono: JetBrains Mono — code/labels
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <!-- Subtle Cinematic Film Grain Overlay -->
-    <div class="film-grain"></div>
+    <!-- Grain texture overlay -->
+    <div class="grain" aria-hidden="true"></div>
 
-    <!-- Tron Grid Canvas Background -->
-    <canvas id="tron-grid-canvas"></canvas>
-
-    <!-- Navigation (Sleek Vector Grid Nav) -->
-    <nav class="cinematic-nav fade-in-delay">
-        <a href="#hero" class="nav-brand">VIJAY KUMAR</a>
+    <!-- ===================== NAVIGATION ===================== -->
+    <nav class="nav" id="nav">
+        <a href="#hero" class="nav-logo">Vijay Kumar</a>
         <div class="nav-links">
-            <a href="#act-i">PROFILE</a>
-            <a href="#act-ii">EXPERTISE</a>
-            <a href="#act-iii">PROJECTS</a>
-            <a href="#epilogue">CONTACT</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
         </div>
+        <button class="nav-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span>
+        </button>
     </nav>
 
-    <!-- Hero / Title Sequence (Grid Entry Point) -->
-    <header id="hero" class="scene">
-        <div class="scene-content text-center">
-            <p class="presenting fade-in">FULL-STACK DEVELOPER</p>
-            <h1 class="main-title cinematic-reveal">VIJAY KUMAR</h1>
-            <p class="subtitle fade-in-delay">FULL-STACK WEB & AUTOMATION DEVELOPER</p>
-            <div class="scroll-indicator fade-in-delay-long">
-                <span>EXPLORE</span>
-                <div class="line"></div>
+    <!-- Mobile nav drawer -->
+    <div class="nav-drawer" id="navDrawer" aria-hidden="true">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- ===================== HERO ===================== -->
+    <div class="hero-wrap">
+    <section id="hero" class="hero">
+        <div class="hero-inner">
+            <div class="hero-label fade-up">Full-Stack Developer &amp; Automation Engineer</div>
+            <h1 class="hero-title fade-up delay-1">
+                Vijay<br>
+                <em>Kumar</em>
+            </h1>
+            <div class="hero-meta fade-up delay-2">
+                <span>Based in Tamil Nadu, India</span>
+                <span class="dot">·</span>
+                <span>MERN · Java · n8n</span>
+            </div>
+            <a href="#about" class="hero-scroll fade-up delay-3" aria-label="Scroll to about">
+                <span>Scroll</span>
+                <div class="hero-scroll-line"></div>
+            </a>
+        </div>
+        <div class="hero-portrait fade-in-right delay-2">
+            <div class="portrait-ring">
+                <img src="images/Vijay.jpeg" alt="Vijay Kumar" loading="eager" class="portrait-circle">
             </div>
         </div>
-    </header>
+    </section>
+    </div><!-- /hero-wrap -->
 
-    <!-- Act I: About (Professional Identity) -->
-    <section id="act-i" class="scene">
-        <div class="scene-content">
-            <div class="chapter-marker reveal-element">
-                <span class="chapter-num">ACT_01</span>
-                <h2 class="chapter-title">PROFESSIONAL PROFILE</h2>
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-index">01</span>
+                <h2 class="section-title">About</h2>
             </div>
-
-            <div class="story-grid">
-                <div class="story-text reveal-element">
-                    <p>Hey — I’m Vijay Kumar, a full-stack developer and automation architect from Kangayam, Tiruppur, Tamil Nadu, India. I enjoy building modern web applications, scalable database systems, and end-to-end automation workflows that combine visual aesthetics with robust architecture.</p>
-                    <p class="highlight">I worked on MERN stack, n8n automation pipeline engineering, and low-latency data structures. Outside of development, I spend my time playing chess and cricket.</p>
+            <div class="about-grid">
+                <div class="about-bio reveal delay-1">
+                    <p>I'm a full-stack developer and automation engineer from Kangayam, Tiruppur, Tamil Nadu. I build modern web applications, scalable APIs, and end-to-end automation workflows — with equal attention to code quality and user experience.</p>
+                    <p>My work spans the MERN stack, Java Spring Boot, and AI-powered automation with n8n. When I'm not building, I'm at a chess board or a cricket pitch. </p>
                 </div>
-                <div class="story-image reveal-element">
-                    <div class="portrait-frame">
-                        <img src="images/1760114829766.jpg" alt="Vijay Kumar" class="cinematic-portrait">
+                <div class="about-stats reveal delay-2">
+                    <div class="stat">
+                        <span class="stat-num">6+</span>
+                        <span class="stat-label">Projects shipped</span>
                     </div>
+                    <div class="stat">
+                        <span class="stat-num">2</span>
+                        <span class="stat-label">Core stacks — MERN &amp; Java Spring Boot</span>
+                    </div>
+                    <div class="stat">
+                         <span class="stat-num">2+</span>
+                         <span class="stat-label">Automation pipelines shipped — n8n</span>
+                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Act II: Skills (Technical Expertise) -->
-    <section id="act-ii" class="scene">
-        <div class="scene-content">
-            <div class="chapter-marker reveal-element">
-                <span class="chapter-num">ACT_02</span>
-                <h2 class="chapter-title">TECHNICAL EXPERTISE</h2>
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" class="section section--skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-index">02</span>
+                <h2 class="section-title">Skills</h2>
             </div>
+            <div class="skills-grid">
 
-            <div class="arsenal-grid">
-                <div class="arsenal-card reveal-element">
-                    <h3>FRONTEND WEB DEVELOPMENT</h3>
-                    <div class="divider"></div>
+                <!-- FRONTEND -->
+                <div class="skill-group reveal delay-1">
+                    <div class="skill-group-header">
+                        <span class="skill-group-num">01</span>
+                        <h3 class="skill-group-title">Frontend</h3>
+                    </div>
                     <ul class="skill-list">
-                        <li>HTML5 & CSS3</li>
-                        <li>JavaScript</li>
-                        <li>React.js</li>
-                        <li>TypeScript</li>
+                        <li>
+                            <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 3l1.5 17L12 22l6.5-2L20 3H4z"/><path d="M16.5 7.5h-9l.5 5h8l-.5 5L12 19l-3.5-1-.25-2.5"/></svg>
+                            HTML5 &amp; CSS3
+                        </li>
+                        <li>
+                            <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 17c0 1 .8 1.5 1.8 1.5C11 18.5 11.7 18 11.7 16.5V12"/><path d="M14 12h4M16 12v5c0 .8.4 1.5 1 1.5"/></svg>
+                            JavaScript
+                        </li>
+                        <li>
+                            <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="2.5"/><ellipse cx="12" cy="12" rx="10" ry="3.5"/><ellipse cx="12" cy="12" rx="10" ry="3.5" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="3.5" transform="rotate(120 12 12)"/></svg>
+                            React.js
+                        </li>
+                        <li>
+                            <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h3.5a2 2 0 0 1 0 4H9v4"/><path d="M15 17h3"/></svg>
+                            TypeScript
+                        </li>
                     </ul>
                 </div>
 
-                <div class="arsenal-card reveal-element" style="transition-delay: 0.2s;">
-                    <h3>BACKEND SERVICES</h3>
-                    <div class="divider"></div>
+                <!-- BACKEND -->
+                <div class="skill-group reveal delay-2">
+                    <div class="skill-group-header">
+                        <span class="skill-group-num">02</span>
+                        <h3 class="skill-group-title">Backend</h3>
+                    </div>
                     <ul class="skill-list">
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                        <li>Java</li>
-                        <li>Spring Boot</li>
+                        <li>
+                            <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                            Node.js
+                        </li>
+                        <li>
+                            <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 12h18M3 6h18M3 18h12"/></svg>
+                            Express.js
+                        </li>
+                        <li>
+                            <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8.5 19s-2 1 4 1 5.5-1 5.5-1M8 15.5s-1 .5 4 1 5-.3 5-.3"/><path d="M10.5 3s-1 4 2.5 5 3 3 2.5 4.5-2 2.5-2 2.5M13.5 3s1 4-2.5 5-3 3-2.5 4.5 2 2.5 2 2.5"/><path d="M7 21s-1 1.5 5 1.5 6-.5 6-1.5"/></svg>
+                            Java
+                        </li>
+                        <li>
+                            <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12a4 4 0 0 1 8 0"/><path d="M12 8v1M19.5 7l-.7.7M4.5 7l.7.7"/><circle cx="18" cy="5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                            Spring Boot
+                        </li>
                     </ul>
                 </div>
 
-                <div class="arsenal-card reveal-element" style="transition-delay: 0.4s;">
-                    <h3>DATABASES, AUTOMATION & TOOLING</h3>
-                    <div class="divider"></div>
+                <!-- DATA & TOOLS -->
+                <div class="skill-group reveal delay-3">
+                    <div class="skill-group-header">
+                        <span class="skill-group-num">03</span>
+                        <h3 class="skill-group-title">Data &amp; Tools</h3>
+                    </div>
                     <ul class="skill-list">
-                        <li>MongoDB</li>
-                        <li>MySql</li>
-                        <li>Vector Databases (Endee)</li>
-                        <li>n8n Automation</li>
-                        <li>Git & GitHub</li>
-                        <li>VS Code</li>
-                        <li>Postman</li>
+                        <li>
+                            <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2c0 0-4.5 5.5-4.5 10a4.5 4.5 0 0 0 9 0C16.5 7.5 12 2 12 2z"/><line x1="12" y1="2" x2="12" y2="22"/></svg>
+                            MongoDB
+                        </li>
+                        <li>
+                            <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="2.5"/><path d="M4 6v4c0 1.4 3.6 2.5 8 2.5S20 11.4 20 10V6"/><path d="M4 10v4c0 1.4 3.6 2.5 8 2.5S20 15.4 20 14v-4"/><path d="M4 14v4c0 1.4 3.6 2.5 8 2.5S20 19.4 20 18v-4"/></svg>
+                            MySQL
+                        </li>
+                        <li>
+                            <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="5" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 11.5L12 9l5-2.5M7 12.5L12 15l5 2.5"/></svg>
+                            n8n Automation
+                        </li>
+                        <li>
+                            <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><circle cx="6" cy="6" r="2"/><path d="M6 8v8M6 8l9.5-.5a2 2 0 0 1 2 2v.5"/><path d="M18 14v2"/></svg>
+                            Git &amp; GitHub
+                        </li>
+                        <li>
+                            <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17 2.5L3 9.5l5 3.5M17 2.5L21 9l-5 3.5M3 9.5l5 3.5v9l9-5v-7"/><path d="M8 13v9"/></svg>
+                            VS Code
+                        </li>
+                        <li>
+                            <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 12l5.5-5.5"/><circle cx="12" cy="12" r="2.5"/></svg>
+                            Postman
+                        </li>
                     </ul>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Act III: Projects (Featured Portfolios) -->
-    <section id="act-iii" class="scene">
-        <div class="scene-content">
-            <div class="chapter-marker reveal-element">
-                <span class="chapter-num">ACT_03</span>
-                <h2 class="chapter-title">FEATURED PROJECTS</h2>
+    <!-- ===================== WORK ===================== -->
+    <section id="work" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-index">03</span>
+                <h2 class="section-title">Works</h2>
             </div>
 
-            <div class="chronicles-list">
-                <!-- Project 1 -->
-                <div class="chronicle reveal-element">
-                    <div class="chronicle-header">
-                        <span class="chronicle-year">PROJECT_2024</span>
-                        <h3 class="chronicle-title">Bus Ticket & Tracking <span class="toggle-indicator">[+]</span></h3>
-                    </div>
-                    <div class="chronicle-details">
-                        <p class="chronicle-desc">A real-time geospatial tracking and seat monitoring system. Built to
-                            navigate the complexities of transit data and interactive mapping.</p>
-                        <div class="chronicle-tech">
-                            <span>React</span> <span>•</span> <span>Node.js</span> <span>•</span>
-                            <span>Express.js</span><span>•</span><span>MongoDB</span>
-                        </div>
-                        <a href="https://github.com/vijay0414/Bus_Ticket_and_Tracking" target="_blank"
-                            class="cinematic-link">View Source</a>
-                    </div>
+            <!-- Project: Bus Ticket & Tracking -->
+            <article class="project reveal">
+                <div class="project-meta">
+                    <span class="project-year">2024</span>
+                    <span class="project-type">Transit · Web App</span>
                 </div>
-
-                <!-- Project 2 -->
-                <div class="chronicle reveal-element">
-                    <div class="chronicle-header">
-                        <span class="chronicle-year">PROJECT_2026</span>
-                        <h3 class="chronicle-title">Agri-Trade Platform <span class="toggle-indicator">[+]</span></h3>
-                    </div>
-                    <div class="chronicle-details">
-                        <p class="chronicle-desc">A scalable marketplace bridging the gap between farmers and retailers.
-                            Engineered for direct connection and seamless digital transactions.</p>
-                        <div class="chronicle-tech">
-                            <span>React</span> <span>•</span> <span>Java</span> <span>•</span>
-                            <span>Springboot</span><span>•</span><span>MYSQL</span>
-                        </div>
-                        <a href="https://github.com/vijay0414/Digital-Agriculture-Trading-Platform" target="_blank"
-                            class="cinematic-link">View Source</a>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="chronicle reveal-element">
-                    <div class="chronicle-header">
-                        <span class="chronicle-year">PROJECT_2025</span>
-                        <h3 class="chronicle-title">OnDutyTracker <span class="toggle-indicator">[+]</span></h3>
-                    </div>
-                    <div class="chronicle-details">
-                        <p class="chronicle-desc">The “On Duty Tracker” is a full-stack web application designed to manage and track college events efficiently.</p>
-                        <div class="chronicle-tech">
-                            <span>React</span> <span>•</span> <span>Node.js</span> <span>•</span>
-                            <span>Express.js</span><span>•</span><span>MONGODB</span><span>•</span><span>JWT authentication</span>
-                        </div>
-                        <a href="https://github.com/vijay0414/Ondutytracker" target="_blank"
-                            class="cinematic-link">View Source</a>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="chronicle reveal-element">
-                    <div class="chronicle-header">
-                        <span class="chronicle-year">PROJECT_2025</span>
-                        <h3 class="chronicle-title">Sentiment Analysis Workflow (N8N) <span class="toggle-indicator">[+]</span></h3>
-                    </div>
-                    <div class="chronicle-details">
-                        <p class="chronicle-desc">A highly scalable review scraping and automated sentiment analysis platform. It features an advanced N8N workflow trigger connected to Google Maps and Amazon product review parsers using SerpAPI and webhooks to sync reviews into a local Node/Express database.</p>
-                        <div class="chronicle-tech">
-                            <span>N8N Automation</span> <span>•</span> <span>Node.js</span> <span>•</span>
-                            <span>Express.js</span><span>•</span><span>SerpAPI</span><span>•</span><span>Webhooks</span>
-                        </div>
-                        <a href="https://github.com/vijay0414/Sentiment_Analysis_Using_N8N" target="_blank"
-                            class="cinematic-link">View Source</a>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="chronicle reveal-element">
-                    <div class="chronicle-header">
-                        <span class="chronicle-year">PROJECT_2026</span>
-                        <h3 class="chronicle-title">GitHub Repo Analyzer <span class="toggle-indicator">[+]</span></h3>
-                    </div>
-                    <div class="chronicle-details">
-                        <p class="chronicle-desc">Collaborative work on Endee.io, an ultra high-performance, single-node vector database built in Python designed to index and query up to 1 billion vectors. Contributed to core vector search benchmarks and advanced low-level memory layout optimizations.</p>
-                        <div class="chronicle-tech">
-                            <span>Python</span> <span>•</span> <span>Vector Search</span> <span>•</span>
-                            <span>Semantic Querying</span><span>•</span><span>Database Core</span>
-                        </div>
-                        <a href="https://github.com/vijay0414/vijay-endee" target="_blank"
-                            class="cinematic-link">View Source</a>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="chronicle reveal-element">
-                    <div class="chronicle-header">
-                        <span class="chronicle-year">PROJECT_2026</span>
-                        <h3 class="chronicle-title">CodeIntellAI <span class="toggle-indicator">[+]</span></h3>
-                    </div>
-                    <div class="chronicle-details">
-                        <p class="chronicle-desc">An AI-powered code intelligence platform that reviews, debugs, optimizes, and translates code across languages from a single paste. Built with FastAPI and React, it uses Groq and Gemini to deliver structured, actionable feedback instead of generic chat responses.</p>
-                        <div class="chronicle-tech">
-                            <span>FastAPI</span> <span>•</span> <span>React</span> <span>•</span>
-                            <span>Groq</span><span>•</span><span>Gemini</span>
+                <div class="project-body">
+                    <h3 class="project-title">Bus Ticket &amp; Tracking</h3>
+                    <div class="project-content">
+                        <div class="project-text">
+                            <div class="project-field">
+                                <span class="field-label">Problem</span>
+                                <p>Commuters had no live visibility into bus locations or seat availability, leading to missed buses and wasted time at stops.</p>
+                            </div>
+                            <div class="project-field">
+                                <span class="field-label">Approach</span>
+                                <p>Built a real-time geospatial tracking system with interactive seat monitoring, combining WebSocket-driven location updates with a React map interface.</p>
+                            </div>
+                            <div class="project-stack">
+                                <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
+                            </div>
                         </div>
                         <div class="project-links">
-                            <a href="https://code-intell-ai.vercel.app/" target="_blank"
-                                class="cinematic-link">View Demo</a>
-                            <a href="https://github.com/vijay0414/CodeIntellAI" target="_blank"
-                                class="cinematic-link">View Source</a>
+                            <a href="https://github.com/vijay0414/Bus_Ticket_and_Tracking" target="_blank" rel="noopener" class="link-arrow">
+                                GitHub <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
+
+            <!-- Project: Agri-Trade -->
+            <article class="project reveal">
+                <div class="project-meta">
+                    <span class="project-year">2026</span>
+                    <span class="project-type">Marketplace · Full-Stack</span>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Agri-Trade Platform</h3>
+                    <div class="project-content">
+                        <div class="project-text">
+                            <div class="project-field">
+                                <span class="field-label">Problem</span>
+                                <p>Farmers lack a direct channel to retailers, forcing them through intermediaries that erode margins and delay payments.</p>
+                            </div>
+                            <div class="project-field">
+                                <span class="field-label">Approach</span>
+                                <p>Designed a scalable marketplace with role-based dashboards for farmers and retailers, secure payment flows, and a Spring Boot API backing a React frontend.</p>
+                            </div>
+                            <div class="project-stack">
+                                <span>React</span><span>Java</span><span>Spring Boot</span><span>MySQL</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/vijay0414/Digital-Agriculture-Trading-Platform" target="_blank" rel="noopener" class="link-arrow">
+                                GitHub <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project: OnDutyTracker -->
+            <article class="project reveal">
+                <div class="project-meta">
+                    <span class="project-year">2025</span>
+                    <span class="project-type">SaaS · MERN</span>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">OnDutyTracker</h3>
+                    <div class="project-content">
+                        <div class="project-text">
+                            <div class="project-field">
+                                <span class="field-label">Problem</span>
+                                <p>College event management was handled through paper forms and spreadsheets, making it slow to approve on-duty requests and reconcile attendance.</p>
+                            </div>
+                            <div class="project-field">
+                                <span class="field-label">Approach</span>
+                                <p>Built a full-stack event tracking system with JWT-secured role flows for students, faculty, and admins. Requests, approvals, and attendance logs all in one place.</p>
+                            </div>
+                            <div class="project-stack">
+                                <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/vijay0414/Ondutytracker" target="_blank" rel="noopener" class="link-arrow">
+                                GitHub <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project: Sentiment Analysis -->
+            <article class="project reveal">
+                <div class="project-meta">
+                    <span class="project-year">2025</span>
+                    <span class="project-type">Automation · AI</span>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Sentiment Analysis Workflow</h3>
+                    <div class="project-content">
+                        <div class="project-text">
+                            <div class="project-field">
+                                <span class="field-label">Problem</span>
+                                <p>Manually tracking product and business sentiment across Google Maps and Amazon reviews doesn't scale — data is scattered and analysis is inconsistent.</p>
+                            </div>
+                            <div class="project-field">
+                                <span class="field-label">Approach</span>
+                                <p>Engineered a fully automated n8n pipeline that scrapes reviews via SerpAPI and webhooks, then runs sentiment analysis before persisting structured results to a local Node/Express database.</p>
+                            </div>
+                            <div class="project-stack">
+                                <span>n8n</span><span>Node.js</span><span>Express</span><span>SerpAPI</span><span>Webhooks</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/vijay0414/Sentiment_Analysis_Using_N8N" target="_blank" rel="noopener" class="link-arrow">
+                                GitHub <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project: GitHub Repo Analyzer / Endee -->
+            <article class="project reveal">
+                <div class="project-meta">
+                    <span class="project-year">2026</span>
+                    <span class="project-type">Systems · Vector DB</span>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">GitHub Repo Analyzer</h3>
+                    <div class="project-content">
+                        <div class="project-text">
+                            <div class="project-field">
+                                <span class="field-label">Problem</span>
+                                <p>High-dimensional vector search at billion-scale requires low-level memory layout optimisations that general-purpose databases can't provide.</p>
+                            </div>
+                            <div class="project-field">
+                                <span class="field-label">Approach</span>
+                                <p>Contributed to Endee.io — a single-node vector database engineered in Python to index and query up to 1 billion vectors. Work included core search benchmarks and memory layout optimisations.</p>
+                            </div>
+                            <div class="project-stack">
+                                <span>Python</span><span>Vector Search</span><span>Semantic Querying</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/vijay0414/vijay-endee" target="_blank" rel="noopener" class="link-arrow">
+                                GitHub <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project: CodeIntellAI -->
+            <article class="project reveal">
+                <div class="project-meta">
+                    <span class="project-year">2026</span>
+                    <span class="project-type">AI · Developer Tool</span>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">CodeIntellAI</h3>
+                    <div class="project-content">
+                        <div class="project-text">
+                            <div class="project-field">
+                                <span class="field-label">Problem</span>
+                                <p>Developers juggle multiple tools for reviewing, debugging, optimising, and translating code — generic chat interfaces don't give structured, actionable output.</p>
+                            </div>
+                            <div class="project-field">
+                                <span class="field-label">Approach</span>
+                                <p>Built an AI-powered code intelligence platform using FastAPI and React, backed by Groq and Gemini. Paste code once — get structured review, debug notes, optimisation suggestions, and cross-language translation in a single response.</p>
+                            </div>
+                            <div class="project-stack">
+                                <span>FastAPI</span><span>React</span><span>Groq</span><span>Gemini</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://code-intell-ai.vercel.app/" target="_blank" rel="noopener" class="link-arrow">
+                                Live demo <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                            <a href="https://github.com/vijay0414/CodeIntellAI" target="_blank" rel="noopener" class="link-arrow">
+                                GitHub <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
         </div>
     </section>
 
-    <!-- Act IV: Contact (Secure Communications Portal) -->
-    <section id="epilogue" class="scene">
-        <div class="scene-content text-center reveal-element">
-            <p class="presenting">SECURE COMMUNICATIONS CHANNEL</p>
-            <h2 class="main-title small-title">GET IN TOUCH</h2>
-
-            <div class="contact-links">
-                <a href="mailto:vijaykumarasamyvkps@gmail.com" class="epic-email">vijaykumarasamyvkps@gmail.com</a>
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section section--contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-index">04</span>
+                <h2 class="section-title">Let's talk</h2>
             </div>
-
-            <div class="social-cast">
-                <span>PORT_COMMUNICATIONS_DIRECTORY</span>
-                <div class="cast-links">
-                    <a href="https://github.com/vijay0414" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="https://www.linkedin.com/in/vijaykumarasamy/" target="_blank"><i
-                            class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="https://wa.me/917598202292" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <div class="contact-grid">
+                <div class="contact-intro reveal delay-1">
+                    <p>Open to full-time roles, freelance projects, and interesting conversations. If you're building something and think I'd be a good fit, reach out.</p>
+                    <a href="mailto:vijaykumarasamyvkps@gmail.com" class="contact-email reveal delay-2">
+                        vijaykumarasamyvkps@gmail.com
+                    </a>
+                </div>
+                <div class="contact-links reveal delay-2">
+                    <a href="https://github.com/vijay0414" target="_blank" rel="noopener" class="contact-link">
+                        <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/vijaykumarasamy/" target="_blank" rel="noopener" class="contact-link">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+                    </a>
+                    <a href="https://wa.me/917598202292" target="_blank" rel="noopener" class="contact-link">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
+                    </a>
+                    <a href="./resume/5179_VijayKumarKNEW.pdf" download class="contact-link contact-link--resume">
+                        <i class="fas fa-file-alt" aria-hidden="true"></i> Download CV
+                    </a>
                 </div>
             </div>
-
-            <div class="resume-download">
-                <a href="./resume/5179_VijayKumarKNEW.pdf" download class="cinematic-btn">DOWNLOAD PORTFOLIO RESUME</a>
-            </div>
         </div>
     </section>
 
-    <!-- Credits -->
-    <footer class="credits reveal-element">
-        <p>VIJAY KUMAR // SOFTWARE ENGINEER</p>
-        <p class="small">© 2026</p>
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span>Vijay Kumar</span>
+            <span class="footer-copy">© 2026</span>
+        </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
