@@ -2,7 +2,7 @@
 
 Personal portfolio site built with vanilla HTML, CSS, and JavaScript. Dark monochrome editorial aesthetic — no frameworks, no build tools.
 
-Live: [vijay0414.github.io/Portfolio](https://vijay0414.github.io/Portfolio) *(update if hosted elsewhere)*
+Live: [vijay0414.github.io/Portfolio](https://vijay0414.github.io/Portfolio) 
 
 ---
 
