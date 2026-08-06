@@ -76,4 +76,3 @@ No install step. No dependencies. No build.
 - **LinkedIn:** [vijaykumarasamy](https://www.linkedin.com/in/vijaykumarasamy/)
 - **GitHub:** [@vijay0414](https://github.com/vijay0414)
 - **LeetCode:** [VijayKumarasamy](https://leetcode.com/u/VijayKumarasamy/)
-- **WhatsApp:** [+91 75982 02292](https://wa.me/917598202292)
